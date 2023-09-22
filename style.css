@@ -1,0 +1,175 @@
+*{
+  margin:0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+*::selection{
+  background-color: rgb(211, 7, 0);
+}
+main{
+  background-color: black
+}
+.Newbar{
+  background-color: #0B02827F !important;
+}
+.textnav{
+  color: white !important;
+}
+.textnav:hover{
+  background-color: white !important;
+  color: black !important;
+  border-radius: 30px;
+  text-decoration-line: underline;
+  text-decoration-color: red;
+}
+.Diagonal{
+  height: 5px;
+  background-color: red;
+  opacity: 80%;
+}
+.carouselgral{
+  padding: 0px 90px;
+}
+.img_carousel {
+  height: 35vw;
+}
+
+.Paragraph{
+  display: flex;
+  text-wrap:balance;
+ align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+.box1{
+  padding: 20px;
+  text-align: left;
+}
+.box2{
+display: flex;
+justify-content: center;
+}
+.img-car{
+  max-width: 100%;
+  height: auto;
+  display: block; 
+  margin-top: 20px;
+}
+.P-Tittle{
+  color: white;
+  text-align: center;
+  text-decoration-line: underline;
+  text-decoration-color: red;
+}
+.content{
+  font-size: large;
+  text-align: center;
+  margin: 0px 50px 2px 50px;
+  color: white;
+}
+.fia-logo{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.Rules{
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: left;
+  margin: 30px;
+}
+.img-rule{
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 10px;
+}
+.Text-rules{
+  display: flex;
+  justify-content: center;
+  font-size: large;
+  text-align: center;
+}
+.rule-text{
+  color: white;
+  font-family: guevana;
+  font-size: medium;
+}
+.rule-exception{
+  color: rgb(255, 255, 255);
+  background: rgb(0,0,0);
+  background: linear-gradient(36deg, rgba(0,0,0,1) 0%, rgb(68, 68, 68) 50%, rgba(0,0,0,1) 100%);
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 19);
+  margin: 15px;
+}
+.left-foot {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 300px;
+}
+.btn-links{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  color: white;
+  text-align: left;
+}
+.links{
+  width: 10%;
+  color: rgb(255, 255, 255);
+  text-decoration-line: none;
+}
+.links:hover{
+  color:aquamarine ;
+  text-decoration-line: underline;
+}
+.contacts{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  color: white;
+}
+/* Todos desde aqui es MediaQuery */
+@media (max-width:465px){
+  .img_carousel{
+    height: 70vw;}
+  }
+@media (max-width:650px){
+  .fia-3{
+    display: none;
+  }
+}
+@media (max-width:500px){
+  main{
+    background-color: black;
+  }
+  .Text-rules{
+    font-size: smaller;
+  }
+  .P-Tittle{
+    color: white;
+  }
+  .content{
+    color: white;
+    font-size: small;
+  }
+  .rule-text{
+    font-size: small;
+    color: white;
+  }
+}

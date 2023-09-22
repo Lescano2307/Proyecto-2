@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="shortcut icon" href="https://www.carburando.com/media/cache/post_desktop/images/formula-1-logo-0.jpg" type="image/x-icon">
+</head>
+<body>
+    <!--  -->
+    <nav class="navbar navbar-expand-lg Newbar">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" aria-disabled="true">Formula 1</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="textnav nav-link active" aria-current="page" href="../index.html">Página Principal</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="textnav nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                +Más info
+              </a>
+              <ul class="dropdown-menu bg-dark">
+                <li><a class="textnav nav-link" href="../Pilotos/index.html">Pilotos</a></li>
+                <li><a class="textnav nav-link" href="../Circuitos GP/index.html">Circuitos GP</a></li>
+                <li><a class="textnav nav-link" href="../Banderas/index.html">Banderas</a></li>
+                <li><a class="textnav nav-link" href="../Estrategias/index.html">Estrategias</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--  -->
+    <main>
+    <!-- formulario -->
+    <h4 class="title">Dejanos un Mensaje!</h4>
+    <div class="formulario">
+      <div class="box1">
+        <img class="img-portada" src="../assets/alonso-form.jpg" alt="">
+      </div>
+      <div class="box-form">
+        <form id="form">
+          <div class="field">
+            <label  for="nombre">Nombre y Apellido</label>
+            <input class="Text-input" type="text" name="nombre" id="nombre" required pattern="[a-zA-Z\s]+" title="Ingresa solo letras y espacios" minlength="3" maxlength="50"> 
+            <!--TODO En este formulario, puse una ciertas condiciones a la ora de escribir -->
+          </div>
+          <div class="field">
+            <label  for="telefono">Telefono</label>
+            <input class="Text-input" type="text" name="telefono" id="telefono" required pattern="[0-9]+" title="Ingresa solo números" minlength="8" maxlength="15">
+          </div>
+          <div class="field">
+            <label  for="email">Email</label>
+            <input class="Text-input" type="email" name="email" id="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Ingresa un correo electrónico válido" minlength="5" maxlength="320">
+          </div>
+          <div class="field">
+            <label  for="message">Mensaje</label>
+            <textarea class="Text-input" name="message" id="message" cols="26" rows="9.9" required minlength="20" maxlength="160"></textarea>
+          </div>
+          <input class="btn-send" type="submit" id="button" value="Send Email" >
+        </form>
+        
+        <script type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        
+        <script type="text/javascript">
+          emailjs.init('dLOIOAx7Wi-3l2u71')
+        </script>
+    </div>
+  </div>
+</main>
+    <!-- formulario -->
+    <!--  -->
+    <footer><div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed bg-black text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Redes Sociales
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse bg-black text-white" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body d-flex justify-content-evenly flex-wrap">
+            <h6><i class="bi bi-facebook"></i><a href="">  Facebook</a>/AxelLescano</h6>
+            <h6><i class="bi bi-instagram"></i><a href="">  Instagram</a>/Lescano.Art</h6>
+            <h6><i class="bi bi-whatsapp"></i><a href="">     Whatsapp</a>(+54)387-473-2843</h6>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed bg-black text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            (+)Más Sobre Formula 1
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse bg-black text-white" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body d-flex justify-content-evenly flex-wrap flex-column">
+            <a href="../index.html">Pagina Principal</a><br>
+            <a href="../Pilotos/index.html">Pilotos</a><br>
+            <a href="../Circuitos GP/index.html">Circuitos GP</a><br>
+            <a href="">Estrategias</a><br>
+            <a href="">Banderas</a><br>
+          </div>
+        </div>
+      </div>
+    </div>
+    </footer>
+    <!--  -->
+  <!-- scripts -->
+  <script src="./node.js"></script>
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+  emailjs.init('dLOIOAx7Wi-3l2u71')
+</script>
+<!--  -->
+<script src="./app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <!-- scripts -->
+</body>
+</html>

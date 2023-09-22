@@ -1,0 +1,31 @@
+*{
+  margin:0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+*::selection{
+  background-color: rgb(211, 7, 0);
+}
+main{
+  background-color: black
+}
+.Newbar{
+  background-color: #0B02827F !important;
+}
+.textnav{
+  color: white !important;
+}
+.textnav:hover{
+  background-color: white !important;
+  color: black !important;
+  border-radius: 30px;
+  text-decoration-line: underline;
+  text-decoration-color: red;
+}
+.box1{
+  width: 100%;
+}
+.box2{
+  width: 100%;
+}

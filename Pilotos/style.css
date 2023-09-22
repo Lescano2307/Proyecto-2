@@ -1,0 +1,73 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+  width: 100%;
+  background-image: url("./assets/2023-dark-mode-mastodon-pattern.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main{
+  padding: 0px 30px ;
+}
+.Newbar{
+  background-color: #0B02827F !important;
+}
+.textnav{
+  color: white !important;
+}
+.textnav:hover{
+  background-color: white !important;
+  color: black !important;
+  border-radius: 30px;
+  text-decoration-line: underline;
+  text-decoration-color: red;
+}
+.Title{
+  color: white;
+  font-size: xx-large;
+  font-weight: 900;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+.Diagonal {
+  height:10px;
+  background-color: red;
+  opacity: 1;
+}
+
+.img-card{
+  width: 100% !important;
+  height: 30vw;
+}
+
+@media (max-width:768px){
+  .img-card{
+    height: 50vw;
+    /* width: 50% !important; */
+  }
+}
+@media (max-width:430px){
+  .img-card{
+    height: 80vw;
+
+  }
+}
+.tarjet{
+  background-color: black !important;
+  border:1px solid darkblue !important;
+}
+h5{ 
+  text-align: center;
+  font-size: xx-large;
+  font-weight: 700;
+  background-color: red;
+  color: white !important;
+}
+li{
+  text-align: center;
+  color: wheat;
+}

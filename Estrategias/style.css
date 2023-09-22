@@ -1,0 +1,41 @@
+*{
+  margin:0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+*::selection{
+  background-color: rgb(211, 7, 0);
+}
+main{
+  background-color: black
+}
+p{
+  text-wrap:balance;
+}
+.Newbar{
+  background-color: #0B02827F !important;
+}
+.textnav{
+  color: white !important;
+}
+.textnav:hover{
+  background-color: white !important;
+  color: black !important;
+  border-radius: 30px;
+  text-decoration-line: underline;
+  text-decoration-color: red;
+}
+.T-Principal{
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+.img-1{
+  width: 100%;
+}
+.Diagonal{
+  height: 10px;
+  background-color: red;
+  opacity: 1;
+  margin: 10px 0px;
+}
